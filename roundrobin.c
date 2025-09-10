@@ -68,7 +68,7 @@ int main() {
         if(p[cur_idx].bt > quantum) {
             p[cur_idx].bt -= quantum;
             cur_time += quantum;
-            printf("| P%d(%d) %d", p[cur_idx].id, quantum, cur_time);
+            printf("|(%d) P%d(%d) ",quantum-cur_time ,p[cur_idx].id,cur_time);
         } else {
             // Last slice for this process
             cur_time += p[cur_idx].bt;
