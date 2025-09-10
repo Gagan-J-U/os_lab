@@ -68,11 +68,11 @@ int main() {
         if(p[cur_idx].bt > quantum) {
             p[cur_idx].bt -= quantum;
             cur_time += quantum;
-            printf("|(%d) P%d(%d) ",quantum-cur_time ,p[cur_idx].id,cur_time);
+            printf("|(%d) P%d(%d) ",-(quantum-cur_time) ,p[cur_idx].id,cur_time);
         } else {
             // Last slice for this process
             cur_time += p[cur_idx].bt;
-            printf("| P%d(%d) %d", p[cur_idx].id, p[cur_idx].bt, cur_time);
+            printf("|(%d) P%d(%d) ",-(quantum-cur_time) ,p[cur_idx].id,cur_time);
             p[cur_idx].bt = 0;
             p[cur_idx].ct = cur_time;
             p[cur_idx].tat = p[cur_idx].ct - p[cur_idx].at;
