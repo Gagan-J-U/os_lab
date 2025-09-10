@@ -1,0 +1,6 @@
+Placeholder text is used by designers and developers to fill a space in a 
+layout until the final content is ready. The most famous placeholder is Lorem
+ Ipsum, a randomized version of a Latin text.Fog everywhere. Fog up the river, where it flows among green aits and meadows;
+ fog down the river, where it rolls deified among the tiers of shipping and the 
+ waterside pollutions of a great (and dirty) city. You can find more descriptive 
+ text in the referenced document.
