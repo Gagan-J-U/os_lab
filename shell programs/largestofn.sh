@@ -12,7 +12,7 @@ for ((i=0; i<n; i++))
 max=${arr[0]}
 for ((i=1; i<n; i++))
     do
-        if [[ $max < ${arr[$i]} ]]
+        if [[ $max -lt ${arr[$i]} ]]
         then
             max=${arr[$i]}
         fi
