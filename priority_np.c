@@ -17,7 +17,7 @@ P p[15];  // Array of processes with short name
 
 void priority_np(P p[], int n);
 int main() {
-    
+    int n;
     printf("\nEnter the number of processes:\n");
     scanf("%d", &n);
 
@@ -39,7 +39,7 @@ priority_np(p, n);
 }
 
 void priority_np(P p[], int n) {
-    int n, tot_wt = 0, tot_tat = 0;
+    int tot_wt = 0, tot_tat = 0;
     float avg_wt = 0, avg_tat = 0;
     int left = n, cur = 0;
     printf("\nGantt Chart:\n\n");

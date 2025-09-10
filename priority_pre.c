@@ -67,16 +67,16 @@ void priority_p(P p[],int n){
         printf("|(%d)P%d(%d)", cur, p[idx].pid, cur+1);
         p[idx].bt--;
         cur++;
-            if (p[idx].bt == 0) {
-                // If process just completed, store metrics
-                p[idx].ct = cur;
-                p[idx].tat = p[idx].ct - p[idx].at;
-                p[idx].wt = p[idx].tat - p[idx].temp_bt;
-                tot_tat += p[idx].tat;
-                tot_wt += p[idx].wt;
-                left--;
-            }
+        if (p[idx].bt == 0) {
+            // If process just completed, store metrics
+            p[idx].ct = cur;
+            p[idx].tat = p[idx].ct - p[idx].at;
+            p[idx].wt = p[idx].tat - p[idx].temp_bt;
+            tot_tat += p[idx].tat;
+            tot_wt += p[idx].wt;
+            left--;
         }
+    }
         // If no process is ready, time simply advances (CPU idle, unprinted)
     
     printf("|\n");
