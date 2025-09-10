@@ -72,7 +72,7 @@ int main() {
         } else {
             // Last slice for this process
             cur_time += p[cur_idx].bt;
-            printf("|(%d) P%d(%d) ",-(quantum-cur_time) ,p[cur_idx].id,cur_time);
+            printf("|(%d) P%d(%d) ",cur_time-p[cur_idx].bt ,p[cur_idx].id,cur_time);
             p[cur_idx].bt = 0;
             p[cur_idx].ct = cur_time;
             p[cur_idx].tat = p[cur_idx].ct - p[cur_idx].at;
