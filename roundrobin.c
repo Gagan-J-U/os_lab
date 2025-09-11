@@ -78,7 +78,7 @@ int main() {
             p[cur_idx].tat = p[cur_idx].ct - p[cur_idx].at;
             total_tat += p[cur_idx].tat;
             // Waiting time: turnaround - original burst
-            p[cur_idx].wt = p[cur_idx].tat - temp_bt[p[cur_idx].id - 1];
+            p[cur_idx].wt = p[cur_idx].tat - temp_bt[cur_idx];
             total_wt += p[cur_idx].wt;
         }
 

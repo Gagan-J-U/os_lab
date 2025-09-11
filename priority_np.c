@@ -48,7 +48,7 @@ void priority_np(P p[], int n) {
         int idx = -1, minp = 9999;
         // Find process with highest priority among arrived and not finished
         for (int i = 0; i < n; i++) {
-            if (p[i].at <= cur && p[i].done == 0) {
+            if (p[i].at <= cur && !p[i].done) {
                 if (p[i].pri < minp || (p[i].pri == minp && p[i].at < p[idx].at)) {
                     minp = p[i].pri;
                     idx = i;
